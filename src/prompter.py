@@ -30,9 +30,8 @@ def prompt_uret(pdf_yol):
     uretimler = {}
     for i, metin in tqdm(enumerate(metinler), total=len(metinler), desc="Sayfalar"):
         girdi = (
-            "Verilen metni görsel olarak temsil edecek bir sahne oluşturmak için bir detaylı prompt yaz. "
-            "Görsel metni göstermemeli, sadece metnin anlamını, tonunu ve temasını yansıtan bir atmosfer, semboller veya sahneler içermelidir.\n\n"
-            f"Metin: {metin}"
+            f"""You are a prompter tasked with creating a detailed prompt to generate an image that represents the given text visually, without displaying the text itself. The image should capture the essence of the content through relevant visuals, symbols, or scenes that convey the meaning and tone of the text. Focus on creating a scene or atmosphere that reflects the core message of the text, using visual elements that align with the mood and themes. Only the prompt should be written, not the text itself.
+            Text Content:{metin}"""
         )
         yanit = pipe(girdi, max_new_tokens=256, return_full_text=False)
         uretimler[f"sayfa_{i + 1}"] = yanit[0]["generated_text"]
