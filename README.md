@@ -38,3 +38,5 @@ Seçilen görseller, eserin anlatısal etkisini destekleyerek okuyucunun anlatı
 
 ## Sonuç
 Proje, yapay zeka destekli betimleme analizi ve görsel üretim süreçlerinin birleştirilmesiyle, edebi eserlerin görsel bir forma dönüştürülmesine olanak tanımıştır. Elde edilen görseller, metinlerin sanatsal ve duygusal derinliğini güçlendirmiş ve yeni bir anlatı deneyimi sunmuştur.
+
+# Google Drive Linki: https://drive.google.com/drive/folders/1WpuEI018BAJDyLpLdNXhO86RuGjOz5NI?usp=sharing
